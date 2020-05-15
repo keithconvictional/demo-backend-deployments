@@ -1,0 +1,14 @@
+name: Deploy to Prod (Master)
+on:
+  release:
+    tags:
+      - v*
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: Deploy to Prod
+      run: |
+        echo "Deploy to Production"
+        ls -la
