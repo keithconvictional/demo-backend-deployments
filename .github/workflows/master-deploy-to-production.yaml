@@ -1,8 +1,8 @@
 name: Deploy to Prod (Master)
 on:
   release:
-    tags:
-      - v*
+    types:
+      - created
 jobs:
   build:
     runs-on: ubuntu-latest
