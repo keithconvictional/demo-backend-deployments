@@ -3,6 +3,8 @@ on:
   push:
     branches:
       - master
+    tags:
+      - '!refs/tags/*'
 jobs:
   build:
     runs-on: ubuntu-latest
