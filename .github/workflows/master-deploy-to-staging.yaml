@@ -11,9 +11,9 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Deploy to Staging
+      with:
+        foobar: "Yes this worked"
       run: |
         echo "Deploy to Staging"
         ls -la
         echo "Foobar :: [$foobar]"
-      with:
-        foobar: "Yes this worked"
