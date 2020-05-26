@@ -14,3 +14,6 @@ jobs:
       run: |
         echo "Deploy to Staging"
         ls -la
+        echo "Foobar :: [$foobar]"
+      with:
+        foobar: "Yes this worked"
